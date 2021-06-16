@@ -1,0 +1,11 @@
+#saved-cities {
+    border: 2px solid black;
+    min-height: 400px;
+}
+
+#weather-container {
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+    
+}

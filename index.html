@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="bg-primary">
+      <h1 class="display-3 text-center">Weather Dashboard</h1>
+    </header>
+    <main class="d-flex justify-space-between">
+      <section class="col-12 col-md-4 column">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search for a City: </h3>
+          <form id="search-form" class="card-body">
+            <input type="search" id="city-search-request" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+            <button id = "search-btn" type="button" class="btn btn-outline-primary p-2">search</button>
+          </form>
+          <div class="btn-group-vertical" id="saved-cities">
+          </div>
+        </section>
+
+
+
+      <section class="col-12 col-md-8">
+        <h2 class="subtitle"><span id="current-city"></span>
+        </h2>
+          <div id="weather-container" id=current-weather>
+        </div>
+        <div class="card row" style="width: 18rem;">
+        </div>
+      </section>
+    </main>
+    <!-- <body>
+
+        <section class = "d-flex container col align-self-start">
+            <div class="input-group col-12 col-md-3 p-2">
+                <div class="p-2">
+                <h2>Search for a City: </h2>
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary p-2">search</button>
+                </div>
+              </div>
+        </section>
+        <section class="col-12 col-md-9">
+        </section> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
