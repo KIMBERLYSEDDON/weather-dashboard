@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Weather Dashboard</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
       <h1 class="display-3 text-center">Weather Dashboard</h1>
     </header>
     <main class="d-flex justify-space-between">
-      <section class="col-12 col-md-4 column">
+      <section class="col-12 col-md-3 column">
         <div class="card">
           <h3 class="card-header text-uppercase">Search for a City: </h3>
           <form id="search-form" class="card-body">
@@ -24,35 +24,21 @@
               aria-describedby="search-addon" />
             <button id = "search-btn" type="button" class="btn btn-outline-primary p-2">search</button>
           </form>
-          <div class="btn-group-vertical" id="saved-cities">
+          <div class="btn-group-vertical flex-start" id="saved-cities">
           </div>
         </section>
 
 
 
-      <section class="col-12 col-md-8">
+      <section class="col-12 col-md-9">
         <h2 class="subtitle"><span id="current-city"></span>
         </h2>
           <div id="weather-container" id=current-weather>
         </div>
-        <div class="card row" style="width: 18rem;">
+        <div id="forecast" class = "d-flex flex-wrap">
         </div>
       </section>
     </main>
-    <!-- <body>
-
-        <section class = "d-flex container col align-self-start">
-            <div class="input-group col-12 col-md-3 p-2">
-                <div class="p-2">
-                <h2>Search for a City: </h2>
-                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                  aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline-primary p-2">search</button>
-                </div>
-              </div>
-        </section>
-        <section class="col-12 col-md-9">
-        </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

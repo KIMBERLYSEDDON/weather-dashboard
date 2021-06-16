@@ -9,3 +9,15 @@
     height: 200px;
     
 }
+#forecast {
+    width: fit-content;
+}
+.forecast-card {
+background-color: cornflowerblue;
+color: white;
+font-weight: 700;
+font-size: larger;
+}
+.weatherEl p {
+    font-weight: 700;
+}
