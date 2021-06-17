@@ -154,7 +154,6 @@ var displayUV = function (index) {
   var indexEl = document.createElement("div");
   var uvIndex = document.createElement("p");
   uvIndex.innerHTML = "UV Index: " + index;
-  console.log(uvIndex);
   indexEl.appendChild(uvIndex);
   weatherDisplayEl.append(indexEl);
   if (index <= 3) {
@@ -179,7 +178,6 @@ var saveCities = function (city) {
   prevCities.push(city);
   var prevCity = $("<button>");
   prevCity.text(city);
-  console.log(prevCities);
   prevCity.addClass("w-100 btn-light current-city");
   prevCity.attr("type", "submit");
 
